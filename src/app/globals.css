@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4), 0 0 30px rgba(212, 175, 55, 0.2);
+  }
+  .text-gradient-silver {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to bottom right, #ffffff, #d1d5db, #555555);
+  }
+  .mask-inbound {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+
+body {
+  background-color: #030304; /* Pitch black canvas */
+  color: #F8F9FA;
+  overflow-x: hidden;
+  /* We will use default cursor or a custom one if built out */
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030304;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
