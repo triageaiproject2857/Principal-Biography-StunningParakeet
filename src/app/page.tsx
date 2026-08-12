@@ -6,7 +6,7 @@ import AlpanaMotif from "@/components/AlpanaMotif";
 
 export default function Home() {
   return (
-    <main id="main-scroll-container" className="relative h-screen w-full overflow-y-scroll snap-y snap-mandatory selection:bg-white/20 selection:text-white bg-black">
+    <main className="relative w-full overflow-x-hidden selection:bg-white/20 selection:text-white bg-black">
       <AnimatedBackground />
       <KeyboardNavigation />
       
