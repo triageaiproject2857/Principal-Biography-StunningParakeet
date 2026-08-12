@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
+import GsapProvider from "@/components/GsapProvider";
 
 const playfair = Playfair_Display({ 
   subsets: ["latin"], 
@@ -26,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="font-inter antialiased bg-[#030304] text-[#F8F9FA] selection:bg-[#d4af37]/30 selection:text-white">
-        {children}
+        <GsapProvider>
+          {children}
+        </GsapProvider>
       </body>
     </html>
   );
