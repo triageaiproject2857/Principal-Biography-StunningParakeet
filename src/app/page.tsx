@@ -20,7 +20,7 @@ export default function Home() {
             muted
             playsInline
             className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-screen"
-            src="https://res.cloudinary.com/shzosknf/video/upload/Creating_cyberpunk_neon_blue_bac__202608121606_vabg7s.mp4"
+            src="https://res.cloudinary.com/shzosknf/video/upload/Drone_view_of_clean_school_202608121639_the3sk.mp4"
           />
         </div>
         <div className="absolute inset-0 pointer-events-none opacity-20 flex items-center justify-center mix-blend-overlay z-0">
