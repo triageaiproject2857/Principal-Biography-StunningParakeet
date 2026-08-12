@@ -32,8 +32,12 @@ export default function Home() {
               Hailing from West Bengal, Dr. Saha carries a deep, inherent appreciation for the traditions and arts of her homeland. The intricate Alpana designs, traditionally drawn by hand on the floor, represent her continuous connection to her cultural roots and her philosophy of continuous, compassionate growth.
             </p>
           </div>
-          <div className="relative aspect-square rounded-full flex items-center justify-center overflow-hidden">
-             <AlpanaMotif color="#ffffff" className="opacity-80 scale-150" />
+          <div className="relative aspect-square rounded-full flex items-center justify-center overflow-hidden border-4 border-[#d4af37]/30 shadow-2xl shadow-[#d4af37]/20">
+             <img src="/images/bengal_roots.png" alt="West Bengali Alpana Art" className="w-full h-full object-cover opacity-80" />
+             <div className="absolute inset-0 bg-black/40 mix-blend-overlay"></div>
+             <div className="absolute inset-0">
+               <AlpanaMotif color="#ffffff" className="opacity-40 scale-125" />
+             </div>
           </div>
         </div>
       </SlideWrapper>
@@ -57,7 +61,10 @@ export default function Home() {
               Uniquely for an educational leader, she holds a Post Graduate Diploma in Computer Applications and served as a Center Head for pioneering technology education institutions like Aptech and NIIT. This dual fluency in geography and technology allowed her to seamlessly integrate modern digital tools with traditional Gurukul wisdom long before it was commonplace.
             </p>
           </div>
-           <div className="text-center space-y-6">
+           <div className="flex flex-col items-center justify-center space-y-6">
+            <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-[#d4af37]/20 border border-white/10">
+              <img src="/images/digital_education.png" alt="Digital Education" className="w-full h-full object-cover" />
+            </div>
             <h2 className="font-playfair text-4xl text-[#d4af37]">The Assistant Professor</h2>
             <p className="font-inter text-lg text-white/70 font-light leading-relaxed">
               Following her early career as an Assistant Professor in colleges associated with Mumbai University, she laid the groundwork for her transition into massive, structural school leadership.
@@ -86,7 +93,10 @@ export default function Home() {
               Her 15-year tenure in Nagothane (150km from Mumbai) signifies her profound dedication to grassroots education in peripheral geographies. Under her influence, the ecosystem flourished, culminating in the school being ranked as the Number One CBSE School in India for Co-curricular Education (2023-24) by Education Today.
             </p>
           </div>
-           <div className="space-y-6">
+           <div className="space-y-6 flex flex-col justify-center">
+            <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-[#00ffcc]/20 border border-white/10 mb-4">
+              <img src="/images/award_trophy.png" alt="Number 1 CBSE Award Trophy" className="w-full h-full object-cover" />
+            </div>
             <h2 className="font-playfair text-4xl text-white">Multi-Disciplinary Action</h2>
             <p className="font-inter text-lg text-white/70 font-light leading-relaxed">
               She spearheaded collaborations with local fire departments to observe Fire Safety Week, blending online drawing competitions with intensive on-site safety sessions for holistic, real-world learning.
@@ -170,6 +180,9 @@ export default function Home() {
       <SlideWrapper className="bg-gradient-to-br from-black to-[#0A0015]">
         <div className="grid grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
+            <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-[#d4af37]/20 border border-white/10 mb-6">
+              <img src="/images/tennis_event.png" alt="Tennis Tournament" className="w-full h-full object-cover" />
+            </div>
             <h2 className="font-playfair text-4xl text-white">Massive Logistical Coordination</h2>
             <p className="font-inter text-lg text-white/70 font-light leading-relaxed">
               At Lodha World School across its campuses, she demonstrated a profound commitment to inclusive education and massive logistical coordination. She successfully led the institution in hosting the prestigious CBSE South Zone II Tennis Tournament (2024-25), coordinating vast participation from Bengaluru, Pune, and Thiruvananthapuram.
