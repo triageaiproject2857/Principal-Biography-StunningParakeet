@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable} snap-y snap-mandatory scroll-smooth`}>
+    <html lang="en" className={`${playfair.variable} ${inter.variable} snap-y snap-mandatory scroll-smooth`} suppressHydrationWarning>
       <body className="font-inter antialiased bg-[#030304] text-[#F8F9FA] selection:bg-[#d4af37]/30 selection:text-white">
         <GsapProvider>
           {children}

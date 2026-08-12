@@ -13,13 +13,23 @@ export default function Home() {
       {/* ================= ACT I: THE ORIGIN (Crimson/Gold) ================= */}
       {/* SLIDE 01 */}
       <SlideWrapper id="act1" className="bg-gradient-to-br from-[#1a0000] to-[#0A0015]">
-        <div className="absolute inset-0 pointer-events-none opacity-30 flex items-center justify-center">
+        <div className="absolute top-1/2 left-1/2 w-[100vw] h-[100vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0 overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-screen"
+            src="https://res.cloudinary.com/shzosknf/video/upload/Creating_cyberpunk_neon_blue_bac__202608121606_vabg7s.mp4"
+          />
+        </div>
+        <div className="absolute inset-0 pointer-events-none opacity-20 flex items-center justify-center mix-blend-overlay z-0">
           <AlpanaMotif color="#d4af37" className="w-[120vw] max-w-none opacity-50" />
         </div>
-        <div className="flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center text-center relative z-10">
           <span className="font-inter text-sm tracking-[0.3em] text-[#d4af37] uppercase mb-4">Act I: The Origin</span>
-          <h1 className="font-playfair text-6xl md:text-9xl font-black text-white">Dr. Rashmirekha Saha</h1>
-          <p className="mt-8 font-inter text-lg text-white/50 tracking-widest uppercase">The Genesis of Leadership</p>
+          <h1 className="font-playfair text-6xl md:text-9xl font-black text-white drop-shadow-2xl">Dr. Rashmirekha Saha</h1>
+          <p className="mt-8 font-inter text-lg text-white/70 tracking-widest uppercase">The Genesis of Leadership</p>
         </div>
       </SlideWrapper>
 

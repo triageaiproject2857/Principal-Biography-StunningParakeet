@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function ChapterNavigation() {
   const [activeSlide, setActiveSlide] = useState(1);
-  const totalSlides = 20;
+  const totalSlides = 14;
 
   useEffect(() => {
     const slides = document.querySelectorAll('section');
@@ -29,11 +29,27 @@ export default function ChapterNavigation() {
     return () => observer.disconnect();
   }, []);
 
-  // Determine current act based on slide number
   let currentAct = 1;
-  if (activeSlide > 5) currentAct = 2;
-  if (activeSlide > 10) currentAct = 3;
-  if (activeSlide > 15) currentAct = 4;
+  let actStartSlide = 1;
+  let slidesInAct = 4;
+
+  if (activeSlide <= 4) {
+    currentAct = 1;
+    actStartSlide = 1;
+    slidesInAct = 4;
+  } else if (activeSlide <= 7) {
+    currentAct = 2;
+    actStartSlide = 5;
+    slidesInAct = 3;
+  } else if (activeSlide <= 10) {
+    currentAct = 3;
+    actStartSlide = 8;
+    slidesInAct = 3;
+  } else {
+    currentAct = 4;
+    actStartSlide = 11;
+    slidesInAct = 4;
+  }
 
   const acts = [
     { id: 1, name: "I. The Origin" },
@@ -55,7 +71,7 @@ export default function ChapterNavigation() {
                 {currentAct === act.id && (
                   <div 
                     className="h-full bg-gradient-to-r from-[#d4af37] to-[#ff3366] transition-all duration-300"
-                    style={{ width: `${((activeSlide - ((act.id - 1) * 5)) / 5) * 100}%` }}
+                    style={{ width: `${((activeSlide - actStartSlide + 1) / slidesInAct) * 100}%` }}
                   />
                 )}
                 {currentAct > act.id && <div className="h-full w-full bg-white/50" />}
@@ -65,7 +81,7 @@ export default function ChapterNavigation() {
         </div>
         
         <div className="mt-4 md:mt-0 font-playfair text-sm text-white/50">
-          Slide <span className="text-white">{activeSlide.toString().padStart(2, "0")}</span> / 20
+          Slide <span className="text-white">{activeSlide.toString().padStart(2, "0")}</span> / {totalSlides}
         </div>
       </div>
     </div>
