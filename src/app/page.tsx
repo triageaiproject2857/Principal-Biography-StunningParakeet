@@ -7,27 +7,27 @@ import Image from "next/image";
 
 import rangoliImg from "../../public/images/rangoli.jpeg";
 import technologyImg from "../../public/images/technology.jpeg";
-import relianceImg from "../../public/images/reliance.jfif";
+import relianceImg from "../../public/images/reliance.jpg";
 import awardTrophyImg from "../../public/images/award_trophy.png";
 import jaipuriarImg from "../../public/images/jaipuriar.jpg";
 import tennisTournamentImg from "../../public/images/tennis_tournament.jpeg";
 
-import ifipAwardImg from "../../public/images/ifip_award.jfif";
-import starRatingAwardImg from "../../public/images/star_rating_award.jfif";
+import ifipAwardImg from "../../public/images/ifip_award.jpg";
+import starRatingAwardImg from "../../public/images/star_rating_award.jpg";
 import youthLeadershipImg from "../../public/images/youth_leadership.png";
-import apjKalamImg from "../../public/images/apj_kalam.jfif";
-import educationImg from "../../public/images/education.jfif";
-import fiveStarAwardImg from "../../public/images/5_star_award.jfif";
+import apjKalamImg from "../../public/images/apj_kalam.jpg";
+import educationImg from "../../public/images/education.jpg";
+import fiveStarAwardImg from "../../public/images/5_star_award.jpg";
 import guinessWorldRecordsImg from "../../public/images/guiness_world_records.jpg";
 
 const awardImages: Record<string, any> = {
-  "ifip_award.jfif": ifipAwardImg,
+  "ifip_award.jpg": ifipAwardImg,
   "award_trophy.png": awardTrophyImg,
-  "star_rating_award.jfif": starRatingAwardImg,
+  "star_rating_award.jpg": starRatingAwardImg,
   "youth_leadership.png": youthLeadershipImg,
-  "apj_kalam.jfif": apjKalamImg,
-  "education.jfif": educationImg,
-  "5_star_award.jfif": fiveStarAwardImg,
+  "apj_kalam.jpg": apjKalamImg,
+  "education.jpg": educationImg,
+  "5_star_award.jpg": fiveStarAwardImg,
   "guiness_world_records.jpg": guinessWorldRecordsImg
 };
 
@@ -281,13 +281,13 @@ export default function Home() {
           <h2 className="font-playfair text-5xl text-white mb-6">Awards & Recognitions</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
             {[
-              { year: "2024", title: "IFIP Inclusion Award Recognition", image: "ifip_award.jfif" },
+              { year: "2024", title: "IFIP Inclusion Award Recognition", image: "ifip_award.jpg" },
               { year: "2023-24", title: "No. 1 CBSE School (Co-curricular)", image: "award_trophy.png" },
-              { year: "2022", title: "Star Rating Schools Award", image: "star_rating_award.jfif" },
+              { year: "2022", title: "Star Rating Schools Award", image: "star_rating_award.jpg" },
               { year: "2021", title: "Global Youth Leadership Award (Nepal)", image: "youth_leadership.png" },
-              { year: "2021", title: "Dr A.P.J. Abdul Kalam Int. Award", image: "apj_kalam.jfif" },
-              { year: "2021", title: "Education World Jury Award", image: "education.jfif" },
-              { year: "2020", title: "5-Star Rating Award (CED)", image: "5_star_award.jfif" },
+              { year: "2021", title: "Dr A.P.J. Abdul Kalam Int. Award", image: "apj_kalam.jpg" },
+              { year: "2021", title: "Education World Jury Award", image: "education.jpg" },
+              { year: "2020", title: "5-Star Rating Award (CED)", image: "5_star_award.jpg" },
               { year: "2020 & 2021", title: "Two Guinness World Records", image: "guiness_world_records.jpg" }
             ].map((a, i) => (
               <div key={i} className="flex flex-col p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#d4af37]/50 transition-all group overflow-hidden">
