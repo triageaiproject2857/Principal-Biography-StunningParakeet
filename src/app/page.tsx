@@ -199,7 +199,7 @@ export default function Home() {
             </p>
           </div>
           <div className="space-y-6">
-            <h2 className="font-playfair text-4xl text-[#d4af37]">2024 IFIP Inclusion Award</h2>
+            <h2 className="font-playfair text-4xl text-[#d4af37]">2024 IFIP Inclusion Award at UNESCO, Paris</h2>
             <p className="font-inter text-lg text-[#d4af37]/80 font-light leading-relaxed">
               Celebrated for educating stakeholders on inclusive teaching practices, challenging stereotypes, and fostering empathy through strict anti-bullying initiatives and inclusive language policies.
             </p>
