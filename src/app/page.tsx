@@ -3,6 +3,33 @@ import SlideWrapper from "@/components/SlideWrapper";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import KeyboardNavigation from "@/components/KeyboardNavigation";
 import AlpanaMotif from "@/components/AlpanaMotif";
+import Image from "next/image";
+
+import rangoliImg from "../../public/images/rangoli.jpeg";
+import technologyImg from "../../public/images/technology.jpeg";
+import relianceImg from "../../public/images/reliance.jfif";
+import awardTrophyImg from "../../public/images/award_trophy.png";
+import jaipuriarImg from "../../public/images/jaipuriar.jpg";
+import tennisTournamentImg from "../../public/images/tennis_tournament.jpeg";
+
+import ifipAwardImg from "../../public/images/ifip_award.jfif";
+import starRatingAwardImg from "../../public/images/star_rating_award.jfif";
+import youthLeadershipImg from "../../public/images/youth_leadership.png";
+import apjKalamImg from "../../public/images/apj_kalam.jfif";
+import educationImg from "../../public/images/education.jfif";
+import fiveStarAwardImg from "../../public/images/5_star_award.jfif";
+import guinessWorldRecordsImg from "../../public/images/guiness_world_records.jpg";
+
+const awardImages: Record<string, any> = {
+  "ifip_award.jfif": ifipAwardImg,
+  "award_trophy.png": awardTrophyImg,
+  "star_rating_award.jfif": starRatingAwardImg,
+  "youth_leadership.png": youthLeadershipImg,
+  "apj_kalam.jfif": apjKalamImg,
+  "education.jfif": educationImg,
+  "5_star_award.jfif": fiveStarAwardImg,
+  "guiness_world_records.jpg": guinessWorldRecordsImg
+};
 
 export default function Home() {
   return (
@@ -44,7 +71,7 @@ export default function Home() {
             </p>
           </div>
           <div className="relative aspect-square rounded-full flex items-center justify-center overflow-hidden border-4 border-[#d4af37]/30 shadow-2xl shadow-[#d4af37]/20">
-             <img src="/images/rangoli.jpeg" alt="West Bengali Alpana Art" className="w-full h-full object-cover opacity-80" />
+             <img src={rangoliImg.src} alt="West Bengali Alpana Art" className="w-full h-full object-cover opacity-80" />
              <div className="absolute inset-0 bg-black/40 mix-blend-overlay"></div>
              <div className="absolute inset-0">
                <AlpanaMotif color="#ffffff" className="opacity-40 scale-125" />
@@ -76,7 +103,7 @@ export default function Home() {
           </div>
            <div className="flex flex-col items-center justify-center space-y-6">
             <div className="w-full aspect-[4/3] max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-[#d4af37]/20 border border-white/10">
-              <img src="/images/technology.jpeg" alt="Digital Education" className="w-full h-full object-cover object-top" />
+              <img src={technologyImg.src} alt="Digital Education" className="w-full h-full object-cover object-top" />
             </div>
             <h2 className="font-playfair text-4xl text-[#d4af37]">The Assistant Professor</h2>
             <p className="font-inter text-lg text-white/70 font-light leading-relaxed">
@@ -95,7 +122,7 @@ export default function Home() {
           <h1 className="font-playfair text-6xl md:text-8xl font-black text-white">Reliance Foundation School</h1>
           <p className="mt-8 font-inter text-lg text-white/50 tracking-widest uppercase">15 Years in Nagothane</p>
           <div className="mt-12 w-full max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-[#00ffcc]/20 border border-white/10">
-            <img src="/images/reliance.jfif" alt="Reliance Foundation School" className="w-full object-cover max-h-[40vh]" />
+            <img src={relianceImg.src} alt="Reliance Foundation School" className="w-full object-cover max-h-[40vh]" />
           </div>
         </div>
       </SlideWrapper>
@@ -113,7 +140,7 @@ export default function Home() {
           </div>
            <div className="space-y-6 flex flex-col justify-center">
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-[#00ffcc]/20 border border-white/10 mb-4">
-              <img src="/images/award_trophy.png" alt="Number 1 CBSE Award Trophy" className="w-full h-full object-cover" />
+              <img src={awardTrophyImg.src} alt="Number 1 CBSE Award Trophy" className="w-full h-full object-cover" />
             </div>
             <h2 className="font-playfair text-4xl text-white">Multi-Disciplinary Action</h2>
             <p className="font-inter text-lg text-white/70 font-light leading-relaxed">
@@ -143,7 +170,7 @@ export default function Home() {
           <h1 className="font-playfair text-6xl md:text-8xl font-black text-white">Jaipuriar School</h1>
           <p className="mt-4 mb-8 font-inter text-lg text-white/50 tracking-widest uppercase">The Paradigm Shift</p>
           <div className="w-full aspect-video max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-[#3399ff]/20 border border-white/10">
-            <img src="/images/jaipuriar.jpg" alt="Jaipuriar School" className="w-full h-full object-cover" />
+            <img src={jaipuriarImg.src} alt="Jaipuriar School" className="w-full h-full object-cover" />
           </div>
         </div>
       </SlideWrapper>
@@ -208,7 +235,7 @@ export default function Home() {
         <div className="grid grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-6">
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-[#d4af37]/20 border border-white/10 mb-6">
-              <img src="/images/WhatsApp Image 2026-08-15 at 10.03.53 AM.jpeg" alt="Tennis Tournament" className="w-full h-full object-cover" />
+              <img src={tennisTournamentImg.src} alt="Tennis Tournament" className="w-full h-full object-cover" />
             </div>
             <h2 className="font-playfair text-4xl text-white">Massive Logistical Coordination</h2>
             <p className="font-inter text-lg text-white/70 font-light leading-relaxed">
@@ -254,18 +281,18 @@ export default function Home() {
           <h2 className="font-playfair text-5xl text-white mb-6">Awards & Recognitions</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
             {[
-              { year: "2024", title: "IFIP Inclusion Award Recognition", image: "ifip award.jfif" },
+              { year: "2024", title: "IFIP Inclusion Award Recognition", image: "ifip_award.jfif" },
               { year: "2023-24", title: "No. 1 CBSE School (Co-curricular)", image: "award_trophy.png" },
-              { year: "2022", title: "Star Rating Schools Award", image: "star rating award.jfif" },
-              { year: "2021", title: "Global Youth Leadership Award (Nepal)", image: "youth leaderdhip.png" },
-              { year: "2021", title: "Dr A.P.J. Abdul Kalam Int. Award", image: "apj kalam.jfif" },
+              { year: "2022", title: "Star Rating Schools Award", image: "star_rating_award.jfif" },
+              { year: "2021", title: "Global Youth Leadership Award (Nepal)", image: "youth_leadership.png" },
+              { year: "2021", title: "Dr A.P.J. Abdul Kalam Int. Award", image: "apj_kalam.jfif" },
               { year: "2021", title: "Education World Jury Award", image: "education.jfif" },
-              { year: "2020", title: "5-Star Rating Award (CED)", image: "5 star award.jfif" },
-              { year: "2020 & 2021", title: "Two Guinness World Records", image: "guiness orld records.jpg" }
+              { year: "2020", title: "5-Star Rating Award (CED)", image: "5_star_award.jfif" },
+              { year: "2020 & 2021", title: "Two Guinness World Records", image: "guiness_world_records.jpg" }
             ].map((a, i) => (
               <div key={i} className="flex flex-col p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#d4af37]/50 transition-all group overflow-hidden">
                 <div className="w-full aspect-[4/3] mb-4 rounded-lg overflow-hidden bg-black/40 border border-white/5 relative">
-                  <img src={`/images/${a.image}`} alt={a.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={awardImages[a.image]?.src} alt={a.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="mt-auto">
                   <div className="text-[#d4af37] text-xs font-bold mb-1 tracking-wider">{a.year}</div>
