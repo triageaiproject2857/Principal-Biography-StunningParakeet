@@ -2,6 +2,7 @@ import ChapterNavigation from "@/components/ChapterNavigation";
 import SlideWrapper from "@/components/SlideWrapper";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import KeyboardNavigation from "@/components/KeyboardNavigation";
+import AutoScroll from "@/components/AutoScroll";
 import AlpanaMotif from "@/components/AlpanaMotif";
 import Image from "next/image";
 
@@ -36,6 +37,7 @@ export default function Home() {
     <main className="relative w-full overflow-x-hidden selection:bg-white/20 selection:text-white bg-black">
       <AnimatedBackground />
       <KeyboardNavigation />
+      <AutoScroll />
       
       {/* ================= ACT I: THE ORIGIN (Crimson/Gold) ================= */}
       {/* SLIDE 01 */}
