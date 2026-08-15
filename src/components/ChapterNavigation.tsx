@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function ChapterNavigation() {
   const [activeSlide, setActiveSlide] = useState(1);
-  const totalSlides = 14;
+  const totalSlides = 15;
 
   useEffect(() => {
     const slides = document.querySelectorAll('section');
@@ -48,7 +48,7 @@ export default function ChapterNavigation() {
   } else {
     currentAct = 4;
     actStartSlide = 11;
-    slidesInAct = 4;
+    slidesInAct = 5;
   }
 
   const acts = [
@@ -59,7 +59,7 @@ export default function ChapterNavigation() {
   ];
 
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl opacity-40 hover:opacity-100 transition-opacity duration-700 pointer-events-auto mix-blend-screen">
+    <div className={`fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl transition-all duration-700 pointer-events-auto mix-blend-screen ${activeSlide === totalSlides ? "opacity-0 pointer-events-none translate-y-10" : "opacity-40 hover:opacity-100"}`}>
       <div className="flex flex-col md:flex-row items-center justify-between px-4">
         <div className="flex space-x-6">
           {acts.map((act) => (

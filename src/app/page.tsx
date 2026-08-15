@@ -44,7 +44,7 @@ export default function Home() {
             </p>
           </div>
           <div className="relative aspect-square rounded-full flex items-center justify-center overflow-hidden border-4 border-[#d4af37]/30 shadow-2xl shadow-[#d4af37]/20">
-             <img src="/images/bengal_roots.png" alt="West Bengali Alpana Art" className="w-full h-full object-cover opacity-80" />
+             <img src="/images/rangoli.jpeg" alt="West Bengali Alpana Art" className="w-full h-full object-cover opacity-80" />
              <div className="absolute inset-0 bg-black/40 mix-blend-overlay"></div>
              <div className="absolute inset-0">
                <AlpanaMotif color="#ffffff" className="opacity-40 scale-125" />
@@ -75,8 +75,8 @@ export default function Home() {
             </p>
           </div>
            <div className="flex flex-col items-center justify-center space-y-6">
-            <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-[#d4af37]/20 border border-white/10">
-              <img src="/images/digital_education.png" alt="Digital Education" className="w-full h-full object-cover" />
+            <div className="w-full aspect-[4/3] max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-[#d4af37]/20 border border-white/10">
+              <img src="/images/technology.jpeg" alt="Digital Education" className="w-full h-full object-cover object-top" />
             </div>
             <h2 className="font-playfair text-4xl text-[#d4af37]">The Assistant Professor</h2>
             <p className="font-inter text-lg text-white/70 font-light leading-relaxed">
@@ -205,7 +205,7 @@ export default function Home() {
         <div className="grid grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-6">
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-[#d4af37]/20 border border-white/10 mb-6">
-              <img src="/images/tennis_event.png" alt="Tennis Tournament" className="w-full h-full object-cover" />
+              <img src="/images/WhatsApp Image 2026-08-15 at 10.03.53 AM.jpeg" alt="Tennis Tournament" className="w-full h-full object-cover" />
             </div>
             <h2 className="font-playfair text-4xl text-white">Massive Logistical Coordination</h2>
             <p className="font-inter text-lg text-white/70 font-light leading-relaxed">
@@ -242,21 +242,32 @@ export default function Home() {
           <p className="font-inter text-lg text-[#d4af37]/80 font-light leading-relaxed mb-12">
             Serving as the Treasurer for the Mumbai Sahodaya School Complex, she was a vital member of the core coordinating committee orchestrating the 29th National Annual Conference at The Westin Mumbai, focusing on the fusion of ancient Gurukul wisdom with cutting-edge technology, aligning seamlessly with the NEP 2020.
           </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-left">
+        </div>
+      </SlideWrapper>
+
+      {/* SLIDE 15 */}
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+        <div className="text-center max-w-6xl mx-auto space-y-6 relative z-10">
+          <h2 className="font-playfair text-5xl text-white mb-6">Awards & Recognitions</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
             {[
-              { year: "2024", title: "IFIP Inclusion Award Recognition" },
-              { year: "2023-24", title: "No. 1 CBSE School (Co-curricular)" },
-              { year: "2022", title: "Star Rating Schools Award" },
-              { year: "2021", title: "Global Youth Leadership Award (Nepal)" },
-              { year: "2021", title: "Dr A.P.J. Abdul Kalam Int. Award" },
-              { year: "2021", title: "Education World Jury Award" },
-              { year: "2020", title: "5-Star Rating Award (CED)" },
-              { year: "2020 & 2021", title: "Two Guinness World Records" }
+              { year: "2024", title: "IFIP Inclusion Award Recognition", image: "ifip award.jfif" },
+              { year: "2023-24", title: "No. 1 CBSE School (Co-curricular)", image: "award_trophy.png" },
+              { year: "2022", title: "Star Rating Schools Award", image: "star rating award.jfif" },
+              { year: "2021", title: "Global Youth Leadership Award (Nepal)", image: "youth leaderdhip.png" },
+              { year: "2021", title: "Dr A.P.J. Abdul Kalam Int. Award", image: "apj kalam.jfif" },
+              { year: "2021", title: "Education World Jury Award", image: "education.jfif" },
+              { year: "2020", title: "5-Star Rating Award (CED)", image: "5 star award.jfif" },
+              { year: "2020 & 2021", title: "Two Guinness World Records", image: "guiness orld records.jpg" }
             ].map((a, i) => (
-              <div key={i} className="p-4 rounded-lg bg-white/5 border border-white/10 hover:border-[#d4af37]/50 transition-colors">
-                <div className="text-[#d4af37] text-xs font-bold mb-1">{a.year}</div>
-                <div className="text-white text-sm font-playfair">{a.title}</div>
+              <div key={i} className="flex flex-col p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#d4af37]/50 transition-all group overflow-hidden">
+                <div className="w-full aspect-[4/3] mb-4 rounded-lg overflow-hidden bg-black/40 border border-white/5 relative">
+                  <img src={`/images/${a.image}`} alt={a.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div className="mt-auto">
+                  <div className="text-[#d4af37] text-xs font-bold mb-1 tracking-wider">{a.year}</div>
+                  <div className="text-white text-sm font-playfair leading-tight">{a.title}</div>
+                </div>
               </div>
             ))}
           </div>
