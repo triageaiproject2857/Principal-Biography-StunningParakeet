@@ -34,8 +34,9 @@ export default function Home() {
       </SlideWrapper>
 
       {/* SLIDE 02 */}
-      <SlideWrapper className="bg-gradient-to-br from-[#1a0000] to-[#0A0015]">
-        <div className="grid grid-cols-2 gap-12 items-center">
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="grid grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-6">
             <h2 className="font-playfair text-5xl text-white">The Alpana Aesthetic</h2>
             <p className="font-inter text-lg text-white/70 font-light leading-relaxed">
@@ -53,8 +54,9 @@ export default function Home() {
       </SlideWrapper>
 
       {/* SLIDE 03 */}
-      <SlideWrapper className="bg-gradient-to-br from-[#1a0000] to-[#0A0015]">
-        <div className="text-center max-w-4xl mx-auto space-y-6">
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="text-center max-w-4xl mx-auto space-y-6 relative z-10">
           <h2 className="font-playfair text-5xl text-[#d4af37]">Spatial Geography</h2>
           <p className="font-inter text-xl text-white/90 font-light leading-relaxed">
             She holds a Ph.D. in Geography from Mumbai University, endowing her with a profound understanding of spatial dynamics, human environments, and interconnected ecosystems—knowledge she translates directly into institutional leadership and large-scale ecosystem management.
@@ -63,8 +65,9 @@ export default function Home() {
       </SlideWrapper>
 
       {/* SLIDE 04 */}
-      <SlideWrapper className="bg-gradient-to-br from-[#1a0000] to-[#0A0015]">
-        <div className="grid grid-cols-2 gap-12 items-center">
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="grid grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-6">
             <h2 className="font-playfair text-5xl text-white">Technological Fusion</h2>
             <p className="font-inter text-lg text-white/70 font-light leading-relaxed">
@@ -85,17 +88,22 @@ export default function Home() {
 
       {/* ================= ACT II: THE CRUCIBLE (Emerald) ================= */}
       {/* SLIDE 05 */}
-      <SlideWrapper id="act2" className="bg-gradient-to-br from-[#001a0d] to-[#0A0015]">
-        <div className="flex flex-col items-center justify-center text-center">
+      <SlideWrapper id="act2" className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="flex flex-col items-center justify-center text-center relative z-10">
           <span className="font-inter text-sm tracking-[0.3em] text-[#00ffcc] uppercase mb-4">Act II: The Crucible</span>
           <h1 className="font-playfair text-6xl md:text-8xl font-black text-white">Reliance Foundation School</h1>
           <p className="mt-8 font-inter text-lg text-white/50 tracking-widest uppercase">15 Years in Nagothane</p>
+          <div className="mt-12 w-full max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-[#00ffcc]/20 border border-white/10">
+            <img src="/images/reliance.jfif" alt="Reliance Foundation School" className="w-full object-cover max-h-[40vh]" />
+          </div>
         </div>
       </SlideWrapper>
 
       {/* SLIDE 06 */}
-      <SlideWrapper className="bg-gradient-to-br from-[#001a0d] to-[#0A0015]">
-        <div className="grid grid-cols-2 gap-12 items-center">
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="grid grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-6">
              <h2 className="font-playfair text-5xl text-[#00ffcc]">Number 1</h2>
              <h3 className="font-playfair text-3xl text-white">CBSE School in India</h3>
@@ -116,8 +124,9 @@ export default function Home() {
       </SlideWrapper>
 
       {/* SLIDE 07 */}
-      <SlideWrapper className="bg-gradient-to-br from-[#001a0d] to-[#0A0015]">
-        <div className="text-center max-w-4xl mx-auto space-y-6">
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="text-center max-w-4xl mx-auto space-y-6 relative z-10">
           <h2 className="font-playfair text-5xl text-white">Historical Reverence</h2>
           <p className="font-inter text-xl text-[#00ffcc] font-light leading-relaxed">
             She integrated deep historical reverence into the curriculum, orchestrating Chhatrapati Shivaji Maharaj Jayanti celebrations that featured traditional Powada performances, patriotic songs, and artistic displays, blending academic rigor with vibrant cultural engagement.
@@ -127,8 +136,9 @@ export default function Home() {
 
       {/* ================= ACT III: CRISIS (Blue/Silver) ================= */}
       {/* SLIDE 08 */}
-      <SlideWrapper id="act3" className="bg-gradient-to-br from-[#000d1a] to-[#0A0015]">
-        <div className="flex flex-col items-center justify-center text-center">
+      <SlideWrapper id="act3" className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="flex flex-col items-center justify-center text-center relative z-10">
           <span className="font-inter text-sm tracking-[0.3em] text-[#3399ff] uppercase mb-4">Act III: Crisis & Innovation</span>
           <h1 className="font-playfair text-6xl md:text-8xl font-black text-white">Jaipuriar School</h1>
           <p className="mt-8 font-inter text-lg text-white/50 tracking-widest uppercase">The Paradigm Shift</p>
@@ -136,8 +146,9 @@ export default function Home() {
       </SlideWrapper>
 
       {/* SLIDE 09 */}
-      <SlideWrapper className="bg-gradient-to-br from-[#000d1a] to-[#0A0015]">
-        <div className="grid grid-cols-2 gap-12 items-center">
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="grid grid-cols-2 gap-12 items-center relative z-10">
            <div className="space-y-6">
             <h2 className="font-playfair text-5xl text-white">The Rhythm of Kathak</h2>
             <p className="font-inter text-lg text-[#3399ff] font-light leading-relaxed">
@@ -154,8 +165,9 @@ export default function Home() {
       </SlideWrapper>
 
       {/* SLIDE 10 */}
-      <SlideWrapper className="bg-gradient-to-br from-[#000d1a] to-[#0A0015]">
-        <div className="text-center max-w-4xl mx-auto space-y-6">
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="text-center max-w-4xl mx-auto space-y-6 relative z-10">
           <h2 className="font-playfair text-5xl text-white">Experiential Learning</h2>
           <p className="font-inter text-xl text-white/70 font-light leading-relaxed mb-8">
             Her philosophy that "Education should teach people how to be happy and make others happy" remained central. She championed experiential learning despite physical isolation, earning TWO consecutive Guinness World Records:
@@ -175,11 +187,12 @@ export default function Home() {
 
       {/* ================= ACT IV: IRON LADY (Black/White/Gold) ================= */}
       {/* SLIDE 11 */}
-      <SlideWrapper id="act4" className="bg-gradient-to-br from-black to-[#0A0015]">
-        <div className="absolute inset-0 pointer-events-none opacity-20 flex items-center justify-center">
+      <SlideWrapper id="act4" className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="absolute inset-0 pointer-events-none opacity-20 flex items-center justify-center z-0">
           <AlpanaMotif color="#ffffff" className="w-[150vw] max-w-none opacity-30" />
         </div>
-        <div className="flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center text-center relative z-10 w-full h-full">
           <span className="font-inter text-sm tracking-[0.3em] text-white/60 uppercase mb-4">Act IV: Pinnacle Leadership</span>
           <h1 className="font-playfair text-6xl md:text-8xl font-black text-white">The Iron Lady</h1>
           <p className="mt-8 font-inter text-lg text-white/50 tracking-widest uppercase">SNBP & Lodha World School</p>
@@ -187,8 +200,9 @@ export default function Home() {
       </SlideWrapper>
 
       {/* SLIDE 12 */}
-      <SlideWrapper className="bg-gradient-to-br from-black to-[#0A0015]">
-        <div className="grid grid-cols-2 gap-12 items-center">
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="grid grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-6">
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-[#d4af37]/20 border border-white/10 mb-6">
               <img src="/images/tennis_event.png" alt="Tennis Tournament" className="w-full h-full object-cover" />
@@ -208,8 +222,9 @@ export default function Home() {
       </SlideWrapper>
 
       {/* SLIDE 13 */}
-      <SlideWrapper className="bg-gradient-to-br from-black to-[#0A0015]">
-        <div className="text-center max-w-4xl mx-auto space-y-8">
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+
+        <div className="text-center max-w-4xl mx-auto space-y-8 relative z-10">
           <h2 className="font-playfair text-5xl text-white">A Philosophy of Care</h2>
           <blockquote className="text-3xl md:text-5xl font-playfair italic text-[#d4af37] border-l-4 border-[#d4af37] pl-8 text-left leading-tight">
             "Mental health is not a destination, but a process."
@@ -221,8 +236,8 @@ export default function Home() {
       </SlideWrapper>
 
       {/* SLIDE 14 */}
-      <SlideWrapper className="bg-gradient-to-br from-[#1a0000] via-[#2a0a18] to-[#0A0015]">
-        <div className="text-center max-w-5xl mx-auto space-y-8">
+      <SlideWrapper className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
+        <div className="text-center max-w-5xl mx-auto space-y-8 relative z-10">
           <h2 className="font-playfair text-5xl text-white">National Sahodaya Influence</h2>
           <p className="font-inter text-lg text-[#d4af37]/80 font-light leading-relaxed mb-12">
             Serving as the Treasurer for the Mumbai Sahodaya School Complex, she was a vital member of the core coordinating committee orchestrating the 29th National Annual Conference at The Westin Mumbai, focusing on the fusion of ancient Gurukul wisdom with cutting-edge technology, aligning seamlessly with the NEP 2020.

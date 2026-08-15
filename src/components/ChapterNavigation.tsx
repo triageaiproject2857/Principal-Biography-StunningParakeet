@@ -59,8 +59,8 @@ export default function ChapterNavigation() {
   ];
 
   return (
-    <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl">
-      <div className="flex flex-col md:flex-row items-center justify-between p-4 rounded-2xl border border-white/[0.08] bg-[#0A0015]/80 backdrop-blur-xl shadow-2xl">
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl opacity-40 hover:opacity-100 transition-opacity duration-700 pointer-events-auto mix-blend-screen">
+      <div className="flex flex-col md:flex-row items-center justify-between px-4">
         <div className="flex space-x-6">
           {acts.map((act) => (
             <div key={act.id} className="flex flex-col space-y-2">
