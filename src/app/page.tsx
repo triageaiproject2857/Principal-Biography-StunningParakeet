@@ -221,7 +221,7 @@ export default function Home() {
       </SlideWrapper>
 
       {/* SLIDE 14 */}
-      <SlideWrapper className="bg-gradient-to-br from-black to-[#0A0015]">
+      <SlideWrapper className="bg-gradient-to-br from-[#1a0000] via-[#2a0a18] to-[#0A0015]">
         <div className="text-center max-w-5xl mx-auto space-y-8">
           <h2 className="font-playfair text-5xl text-white">National Sahodaya Influence</h2>
           <p className="font-inter text-lg text-[#d4af37]/80 font-light leading-relaxed mb-12">
