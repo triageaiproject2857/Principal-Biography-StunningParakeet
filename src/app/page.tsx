@@ -138,10 +138,13 @@ export default function Home() {
       {/* SLIDE 08 */}
       <SlideWrapper id="act3" className="bg-[url('/images/asthetic-backgrounds.jpg')] bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-black/80">
 
-        <div className="flex flex-col items-center justify-center text-center relative z-10">
+        <div className="flex flex-col items-center justify-center text-center relative z-10 w-full">
           <span className="font-inter text-sm tracking-[0.3em] text-[#3399ff] uppercase mb-4">Act III: Crisis & Innovation</span>
           <h1 className="font-playfair text-6xl md:text-8xl font-black text-white">Jaipuriar School</h1>
-          <p className="mt-8 font-inter text-lg text-white/50 tracking-widest uppercase">The Paradigm Shift</p>
+          <p className="mt-4 mb-8 font-inter text-lg text-white/50 tracking-widest uppercase">The Paradigm Shift</p>
+          <div className="w-full aspect-video max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-[#3399ff]/20 border border-white/10">
+            <img src="/images/jaipuriar.jpg" alt="Jaipuriar School" className="w-full h-full object-cover" />
+          </div>
         </div>
       </SlideWrapper>
 
